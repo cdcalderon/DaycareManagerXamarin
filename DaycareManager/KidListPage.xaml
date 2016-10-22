@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Padding="0, 20, 0, 0" Title="Kids"
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="DaycareManager.KidListPage"
+		>
+	<ContentPage.Content>
+		<ListView x:Name="kidList" ItemSelected="Handle_ItemSelected">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding FirstName}" 
+							  Detail="{Binding LastName}">
+					</TextCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>
